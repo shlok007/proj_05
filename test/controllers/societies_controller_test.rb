@@ -10,7 +10,8 @@ class SocietiesControllerTest < ActionController::TestCase
     get :organisations
     assert_response :success
   end
-  test "should get contactus"
+  test "should get contactus" do
   get :contactus
-  assert_response :sucess
+  assert_response :success
+end
 end

@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'societies/home'
+  get 'home' => 'societies#home'
 
-  get 'societies/organisations'
+  get 'organisations' => 'societies#organisations'
   
-  get 'societies/contactus'
+  get 'contactus' => 'societies#contactus'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

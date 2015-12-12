@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'students/new'
+
   get 'home' => 'societies#home'
 
   get 'organisations' => 'societies#organisations'

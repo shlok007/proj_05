@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'organisations' => 'societies#organisations'
   
   get 'contactus' => 'societies#contactus'
-  resources :users
+  resources :students
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

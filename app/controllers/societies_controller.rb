@@ -1,5 +1,6 @@
 class SocietiesController < ApplicationController
   def home
+    @i=1
   end
 
   def organisations
@@ -7,5 +8,4 @@ class SocietiesController < ApplicationController
   
   def contactus
   end
-  
 end

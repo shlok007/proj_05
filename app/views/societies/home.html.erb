@@ -1,2 +1,10 @@
 <% provide(:title,"proj_05") %>
-<h1 align="middle">Upcoming Events</h1>
+<b><h1 align="middle">Upcoming Events</h1></b>
+<% while @i<=Event.count%>
+<% @event=Event.find(@i) %>
+    <h2>
+        <%=@event.name%>
+    </h2>
+    <p><%=@event.description%></p>
+<%@i+=1%>
+<%end%>

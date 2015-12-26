@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'organisations' => 'societies#organisations'
   
   get 'contactus' => 'societies#contactus'
+  
+ # get 'signup' => 'students#new'
   resources :students
 
   # The priority is based upon order of creation: first created -> highest priority.

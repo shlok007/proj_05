@@ -1,2 +1,35 @@
-<h1>Students#new</h1>
-<p>Find me in app/views/students/new.html.erb</p>
+<style>
+    body
+    {
+     background: url("http://d75822.medialib.glogster.com/imeicolegio/media/de/de8c3d1424679f8343ce3629909232ce9fd453f1/3603-white-crumpled-paper-1920x1200-abstract-wallpaper.jpg") no-repeat center center fixed !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+  	 padding-top: 60px;   
+    }
+</style>
+<h1 align="middle">Enroll Yourself</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @user, url: students_path, html: { method: :put } do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      
+      <%= f.label :admission_no, "Admission No./Roll No." %>
+      <%= f.text_field :admission_no %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Create my account", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'organisations' => 'societies#organisations'
   
   get 'contactus' => 'societies#contactus'
+  get 'signup' => 'students#new'
   
  # get 'signup' => 'students#new'
   resources :students

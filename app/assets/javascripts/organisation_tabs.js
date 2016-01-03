@@ -1,0 +1,20 @@
+$(document).ready(function(){
+$("#ncs_content").hide();
+$("#gdg_content").hide();
+$("#mmil_content").hide();
+$("#ncs").click(function()
+{   $("#mmil_content").hide();
+    $("#gdg_content").hide();
+    $("#ncs_content").show();
+})
+$("#gdg").click(function(){
+    $("#mmil_content").hide();
+    $("#ncs_content").hide();
+    $("#gdg_content").show();
+})
+$("#mmil").click(function(){
+    $("#gdg_content").hide();
+    $("#ncs_content").hide();
+    $("#mmil_content").show();
+})
+})

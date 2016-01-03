@@ -4,6 +4,7 @@ class SocietiesController < ApplicationController
   end
 
   def organisations
+    @i=1
   end
   
   def contactus

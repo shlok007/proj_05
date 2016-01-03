@@ -1,13 +1,35 @@
 <% provide(:title,"List of Organisations") %>
-<h1 align="middle">Organistions</h1>
+<h1 align="middle"> Select an Organisation Name below for their Upcoming Events</h1>
+<script type="text/javascript" src= "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<%= javascript_include_tag 'organisation_tabs'%>
+<h1></h1>
 <header class="navbar" id="org_name" align="middle">
       <div class="container-fluid" align="middle" >
         <nav align="middle">
         <ul class="nav navbar-nav" align="middle">
-        <li><a href="#" >Nibble Computer Society</a></li>
-        <li><a href="#" >Google Developers Group</a></li>
-        <li><a href="#" >Microsoft Mobile Innovation Lab</a></li>
+        <li id="ncs"><a>Nibble Computer Society</a></li>
+        <li id="gdg"><a>Google Developers Group</a></li>
+        <li id="mmil"><a>Microsoft Mobile Innovation Lab</a></li>
         </ul>
 </nav>
 </div>
 </header>
+  <%while @i<=Event.count %>
+  <%@event=Event.find(@i)%>
+  <% if @event.society_code=="ncs" %>
+    <div id="ncs_content">
+    <h1><%=@event.name%></h1>
+    <p><%=@event.description%></p>
+    <button type="button" class="btn btn-default">Register Yourself</button>
+    </div>
+    <%end%>
+  <% if @event.society_code=="gdg" %>
+    <div id="gdg_content">
+    <h1><%=@event.name%></h1>
+    <p><%=@event.description%></p>
+    <button type="button" class="btn btn-default">Register Yourself</button>
+    </div>
+    <%end%>
+ <%@i+=1%>
+ <%end%>
+<span class="glyphicons glyphicons-chevron-right"></span>

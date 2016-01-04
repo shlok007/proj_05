@@ -11,7 +11,7 @@ class SocietiesControllerTest < ActionController::TestCase
     assert_response :success
   end
   test "should get contactus" do
-  get :contactus
-  assert_response :success
-end
+    get :contactus
+    assert_response :success
+  end
 end

@@ -2,10 +2,12 @@
 <b><h1 align="middle">Upcoming Events</h1></b>
 <% while @i<=Event.count%>
 <% @event=Event.find(@i) %>
+<div id="list_events" bgcolor="#FFFFF">
     <h2>
         <%=@event.name%>
     </h2>
     <p><%=@event.description%></p>
     <button type="button" class="btn btn-danger">Register Yourself</button>
+</div>
 <%@i+=1%>
 <%end%>

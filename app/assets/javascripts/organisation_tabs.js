@@ -5,16 +5,16 @@ $("#mmil_content").hide();
 $("#ncs").click(function()
 {   $("#mmil_content").hide();
     $("#gdg_content").hide();
-    $("#ncs_content").show();
+    $("#ncs_content").slideDown("slow");
 })
 $("#gdg").click(function(){
     $("#mmil_content").hide();
     $("#ncs_content").hide();
-    $("#gdg_content").show();
+    $("#gdg_content").slideDown("slow");
 })
 $("#mmil").click(function(){
     $("#gdg_content").hide();
     $("#ncs_content").hide();
-    $("#mmil_content").show();
+    $("#mmil_content").slideDown("slow");
 })
 })

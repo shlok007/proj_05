@@ -35,6 +35,6 @@ Follow the following steps to setup development environment and start contibutin
          
          bin/rails server
 
-6. All set now. Visit [http://localhost:8000][localhost] to view the rails app in development environment.
+6. All set now. Visit [http://localhost:3000][localhost] to view the rails app in development environment.
 
-[localhost]: http://localhost:8000
+[localhost]: http://localhost:3000
